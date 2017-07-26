@@ -1,4 +1,3 @@
-
 $(document).ready(function(){        
 	$('li img').on('click',function(){
 		var src = $(this).attr('src');
