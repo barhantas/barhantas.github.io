@@ -65,7 +65,6 @@ $(document).on('click', 'a.controls', function(){
 	}else{
 		$('a.previous').show()
 	}
-	
-	
+		
 	return false;
 });
