@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Uyarı Işıkları</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/photo-gallery.js"></script>
+  </head>
+  <style>
+      ul {         
+          padding:0 0 0 0;
+          margin:0 0 0 0;
+      }
+      ul li {     
+          list-style:none;
+          margin-bottom:25px;           
+      }
+      ul li img {
+          cursor: pointer;
+      }
+      .modal-body {
+          padding:5px !important;
+      }
+      .modal-content {
+          border-radius:0;
+      }
+      .modal-dialog img {
+          text-align:center;
+          margin:0 auto;
+      }
+    .controls{          
+        width:50px;
+        display:block;
+        font-size:11px;
+        padding-top:8px;
+        font-weight:bold;          
+    }
+    .next {
+        float:right;
+        text-align:right;
+    }
+      /*override modal for demo only*/
+      .modal-dialog {
+          max-width:500px;
+          padding-top: 90px;
+      }
+      @media screen and (min-width: 768px){
+          .modal-dialog {
+              width:500px;
+              padding-top: 90px;
+          }          
+      }
+      @media screen and (max-width:1500px){
+          #ads {
+              display:none;
+          }
+      }
+  </style>
+  <body>    
+    <div class="container">    
+        
+        <ul class="row">
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/1.png" title="Park lambaları ikaz ışığı">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/2.png" title="Uzun farlar ikaz ışığı">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/3.png" title="Kısa farlar ikaz ışığı">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/4.png" title="Ön sis farları ikaz ışığı">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/5.png" title="Arka sis lambaları ikaz ışığı">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/6.png" title="Uzun farlar ikaz ışığı">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/7.png" title="Sol sinyal lambası ikaz ışığı">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/8.png" title="Sağ sinyal lambaları ikaz ışığı">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/9.png" title="Yakıt seviyesi minimum ikaz ışığı : Kontağın açılmasıyla veya motorun çalıştırılmasıyla turuncu yanar ardından birkaç saniye sonra söner.Sürüş esnasında bir sesli sinyalle birlikte turuncu yanarsa, en kısa sürede seviyeyi tamamlayınız. Aracınızı yaklaşık 50 km daha sürebilirsiniz.">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+               <img class="img-responsive" src="ikazışıkları/10.png" title="Zorunlu duruş ikaz ışığı : Kontak açıldığında veya motor çalıştırıldığında yanar ve motor çalışır çalışmaz söner. Diğer ikaz ışıkları ve/veya mesajlarla birlikte yanar ve aynı anda bir sinyal sesi duyulur.İkaz ışığı, güvenliğiniz için trafik kurallarına uygun olarak derhal durulmasını zorunlu kılar. Motoru durdurunuz ve yeniden çalıştırmayınız.Bir Marka Yetkili Servisi’ne danışınız.">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+               <img class="img-responsive" src="ikazışıkları/11.png" title="Fren devresinde arıza ikaz ışığı : Kontak açıldığında veya motor çalıştırıldığında yanar, ardından birkaç saniye sonra söner.Fren yapıldığında Zorunlu duruş ikaz ışığıyla birlikte yanar ve aynı zamanda bir sinyal sesi duyulursa, bu, fren hidroliği seviyesinin düştüğünü ya da fren sisteminde bir arıza olduğunu gösterir. Aracı durdurunuz ve bir Marka Yetkili Servisi’ni arayınız.">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+               <img class="img-responsive" src="ikazışıkları/12.png" title="Akümülatör şarj ikaz ışığı : Kontak açıldığında veya motor çalıştırıldığında yanar, ardından birkaç saniye sonra söner.Seyir halindeyken Zorunlu duruş ikaz ışığıyla birlikte yanar ve aynı zamanda bir sinyal sesi duyulursa, bu elektrik devresinde aşırı şarj ya da düşük şarj olduğunu gösterir.Aracı durdurunuz ve bir Marka Yetkili Servisi’ni arayınız.">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+               <img class="img-responsive" src="ikazışıkları/13.png" title="Yağ basıncı ikaz ışığı: Kontak açıldığında veya motor çalıştırıldığında yanar, ardından birkaç saniye sonra söner.Seyir halindeyken Zorunlu duruş ikaz ışığı birlikte yanar ve aynı zamanda sinyal sesi duyulursa, mutlaka aracı durdurunuz ve kontağı kapatınız.Yağ seviyesini kontrol ediniz. Seviye normalse, sorun başka bir nedenden kaynaklanıyordur. Bir Marka Yetkili Servisi’ne danışınız.">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+               <img class="img-responsive" src="ikazışıkları/14.png" title="Değişken takviyeli direksiyon ikaz ışığı : Kontak açıldığında veya motor çalıştırıldığında yanar, ardından birkaç saniye sonra söner.Sürüş esnasında Zorunlu duruş ikaz ışığıyla birlikte yanarsa, bu sistemde bir arıza olduğunu gösterir.Bir Marka Yetkili Servisi’ne danışın.">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+               <img class="img-responsive" src="ikazışıkları/15.png" title="İkaz ışığı : Kontak açıldığında veya motor çalıştırıldığında yanar ve motor çalışır çalışmaz söner. Diğer ikaz ışıkları ve/veya mesajlarla birlikte gösterge tablosunda yanar.Dikkatli bir şekilde en kısa süre içinde Marka Yetkili Servisi’ne gitmenizi gerektirir. Bu uyarıya uyulmaması, aracın hasar görmesine yol açabilir.">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/16.png" title="Hava kirliliğini önleyici sistem kontrolü ikaz ışığı : Bununla donatılmış araçlarda bu ışık, motor çalıştırıldığında yanar ve araca bağlı olarak kontak kapatıldığında araç, motor bekleme aşamasındaysa (2. bölümdeki “Stop and Start İşlevi” ile ilgili bilgilere bakınız) ışık söner.–Sürekli yanmaya devam ederse, bir an önce Marka Yetkili Servisi’ne başvurunuz;–yanıp sönerse, motor devrini yanıp sönme kesilene dek düşürünüz. Vakit geçirmeden Marka Yetkili Servisi’ne başvurunuz.Bölüm 2’deki “Hava kirliliğini önleme, yakıt ekonomisi ve sürüş ile ilgili öneriler” paragrafına bakınız.">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+               <img class="img-responsive" src="ikazışıkları/17.png" title="ABS fren sistemi ikaz ışığı : Kontak açıldığında veya motor çalıştırıldığında yanar, ardından birkaç saniye sonra söner.Araç seyir halindeyken yanması, ABS sisteminde bir arıza olduğuna işaret eder.Bu durumda fren sistemi, ABS fren sistemi olmayan bir aracın sistemi gibidir. Vakit geçirmeden Marka Yetkili Servisi'ne başvurunuz.">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/18.png" title="ESP ( ESC) ve antipatinaj sistemi ikaz ışığı: Kontak açıldığında veya motor çalıştırıldığında yanar, ardından birkaç saniye sonra söner.İkaz ışığı birçok durumda yanabilir: Bölüm 2’deki “Sürüş destek ve düzeltme sistemleri” paragrafına bakınız.">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/19.png" title="Ön ısıtma ikaz ışığı (dizel model) : Kontak açıldığında yanması gerekir. Bu, ön ısıtma bujilerinin çalışmakta olduğunu gösterir.Ön ısıtma tamamlandığında söner. Motor çalıştırılabilir.">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/20.png" title="Otomatik park freni ikaz ışığı : Bölüm 2’deki «otomatik park freni» paragrafına bakınız.">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/21.png" title="Motorun rölantiye alınması ikaz ışığı : Bölüm 2'deki Stop and Start fonksiyonu paragrafına bakınız.">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/22.png" title="Hız limitörü, hız regülatörü ve uyarlamalı hız regülatörü ikaz ışıkları : .Bölüm 2'deki Hız limitörü, Hız regülatörü ve Uyarlamalı hız regülatörü bilgilerine bakınız.">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/23.png" title="Hız limitörü, hız regülatörü ve uyarlamalı hız regülatörü ikaz ışıkları : Bölüm 2'deki Hız limitörü, Hız regülatörü ve Uyarlamalı hız regülatörü bilgilerine bakınız.">
+            </li>
+            <li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/24.png" title="LASTİK BASINÇLARI KONTROL SİSTEMİ : Bölüm 2’deki «Lastik basınçları kontrol sistemi» paragrafını inceleyiniz.">
+            </li>
+			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/25.png" title="Arka taraf emniyet kemeri takılı değil ikaz ışığı : Araç her çalıştırıldığında, kapı açıldığında veya arka emniyet kemeri takıldığında/çıkarıldığında yaklaşık 30 saniye boyunca yanar. Bölüm 1’deki Emniyet kemeri yükseklik ayarı paragrafına bakınız.">
+            </li>
+			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/26.png" title="Park yardımı ikaz ışığı : Bölüm 2’deki Park yardımı paragrafına bakınız.">
+            </li>
+			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/27.png" title="Acil durum aktif fren ikazı : Bölüm 2’deki « Sürüş destek ve düzeltme sistemleri » paragrafına bakınız.">
+            </li>
+			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/28.png" title="EKO modu ikaz ışığı : ECO modu seçiliyken yanar.Bölüm 2’deki Eko Sürüş paragrafına bakınız.">
+            </li>
+			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/29.png" title="Ayak fren pedalına ikaz ışığı : Fren pedalına basılması gerektiğinde yanar. Bölüm 2’deki “Otomatik vites kutusu” paragrafına bakınız.Bölüm 2’deki Sürüş öneriler, Eko Sürüş paragrafına bakınız.">
+            </li>
+			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/30.png" title="Yolcu hava yastığı ON : Bölüm 1’deki “Çocukların güvenliği: ön yolcu hava yastığını devre dışı bırakma/devreye alma” paragrafına bakınız.">
+            </li>
+			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/31.png" title="Yolcu hava yastığı OFF : Bölüm 1’deki “Çocukların güvenliği: ön yolcu hava yastığını devre dışı bırakma/devreye alma” paragrafına bakınız.">
+            </li>
+			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/32.png" title="Sürücü tarafı emniyet kemeri ve araca göre ön yolcu emniyet kemeri takılı değil ikaz ışığı: Kontağın açılmasıyla dikiz aynasında yanar sonra sürücü ve ön yolcu emniyet kemeri (yolcu varken) takılı değilse, araç yaklaşık 20 km/sa.e ulaştığında yanıp söner ve yaklaşık 2 dakika boyunca sesli bir ikaz duyulur.Not: Minder üzerine konulmuş bir nesne ikaz ışığını çalıştırabilir.">
+            </li>
+			<li class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+                <img class="img-responsive" src="ikazışıkları/33.png" title="Kapı(lar) açık ikaz ışığı">
+            </li>
+          </ul>             
+    </div> <!-- /container -->
+    
+	
+     
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">		
+          <div class="modal-body"> 
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    
+  </body>
+
+
+  
+</html>
