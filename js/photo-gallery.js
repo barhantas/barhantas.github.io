@@ -1,5 +1,3 @@
-<script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
-
 $(document).ready(function(){        
 	$('li img').on('click',function(){
 		var src = $(this).attr('src');
