@@ -1,4 +1,3 @@
-<script type="text/javascript" language="javascript"> 
 $(document).ready(function(){        
 	$('li img').on('click',function(){
 		var src = $(this).attr('src');
@@ -67,4 +66,3 @@ $(document).on('click', 'a.controls', function(){
 		
 	return false;
 });
-</script> <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script> 
